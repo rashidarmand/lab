@@ -1,0 +1,10 @@
+#!/bin/bash
+
+
+# Description: List all dotfiles
+
+for file in ~/dotfiles/*; do
+    [[ -f "$file" ]] || continue
+    echo "$file"
+done
+
